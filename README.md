@@ -9,7 +9,7 @@ you can also find this plugin in **www.vim.org [here](http://www.vim.org/scripts
 Install & Configuration:
 -------------------------------------------------------------------------------------------------------- 
 
-### Install by Bundle:
+### Install by Vundle:
 - `Bundle 'luochen1990/select-and-search'`
 - add this to your vimrc: `let g:select_and_search_active = 1`
 
