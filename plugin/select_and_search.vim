@@ -1,3 +1,8 @@
+if exists('s:loaded') || !((exists('g:select_and_search_active') && g:select_and_search_active))
+	finish
+endif
+let s:loaded = 1
+
 func select_and_search:get_selected_text()
 	let tmp = @"
 	normal! gvy

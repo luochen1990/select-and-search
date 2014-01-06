@@ -1,0 +1,27 @@
+Select & Search
+===
+>	select text in v mode, then press n to search next one (N for prev one)
+
+-------------------------------------------------------------------------------------------------------- 
+
+you can also find this plugin in **www.vim.org [here](http://www.vim.org/scripts/script.php?script_id=4819)**.
+
+Install & Configuration:
+-------------------------------------------------------------------------------------------------------- 
+
+### Install by Bundle:
+- `Bundle 'luochen1990/select-and-search'`
+- add this to your vimrc: `let g:select_and_search_active = 1`
+
+### Manually:
+- first, put `rainbow.vim`(this file) to dir `~/.vim/plugin` or `vimfiles/plugin`
+- second, add the follow sentences to your `.vimrc` or `_vimrc` :
+	```vim
+	let g:select_and_search_active = 1
+	```
+- third, restart your vim and enjoy coding.
+
+-------------------------------------------------------------------------------------------------------- 
+**Rate this script if you like it, 
+and i'll appreciate it and improve this plugin for you because of your support ! 
+ 
