@@ -7,9 +7,13 @@ func select_and_search:get_selected_text()
 	let tmp = @"
 	normal! gvy
 	normal! gv
-	let [tmp , @"] = [@" , tmp]
+	let [tmp, @"] = [@", tmp]
 	return tmp
 endfunc
 
-vnoremap n :<c-u>let @/='\V'.escape(select_and_search:get_selected_text(),'\')<cr><esc>nzz
-vnoremap <s-n> :<c-u>let @/=select_and_search:get_selected_text()<cr><esc><s-n>zz
+func select_and_search:get_search_pat()
+	return '\V'.escape(select_and_search:get_selected_text(), '\')
+endfunc
+
+vnoremap n :<c-u>let @/=select_and_search:get_search_pat()<cr><esc>nzz
+vnoremap <s-n> :<c-u>let @/=select_and_search:get_search_pat()<cr><esc><s-n>zz
