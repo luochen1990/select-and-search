@@ -23,4 +23,5 @@ elseif g:select_and_search_active == 2
 	vnoremap <s-n> :<c-u>let @/=select_and_search:get_search_pat()<cr><esc>zz
 elseif g:select_and_search_active == 3
 	vnoremap * :<c-u>let @/=select_and_search:get_search_pat()<cr><esc>zz
+endif
 
