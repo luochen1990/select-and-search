@@ -21,6 +21,9 @@ Install & Configuration:
 	```
 - third, restart your vim and enjoy coding.
 
+|	`let g:select_and_search_active = 2` will not jump when pressing the first `n` or `N`
+|	`let g:select_and_search_active = 3` will map `*` instead of `n` and `N`
+
 -------------------------------------------------------------------------------------------------------- 
 **Rate this script if you like it, 
 and i'll appreciate it and improve this plugin for you because of your support ! 
