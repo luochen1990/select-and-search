@@ -12,7 +12,7 @@ func select_and_search#get_selected_text()
 endfunc
 
 func select_and_search#plain_text_pattern(s)
-	return '\V'.escape(a:s, '\')
+	return substitute(substitute('\V'.escape(a:s, '\'), '\n', '\\n', 'g'), '\t', '\\t', 'g')
 endfunc
 
 func select_and_search#get_search_pat()
